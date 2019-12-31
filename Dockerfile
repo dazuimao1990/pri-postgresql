@@ -1,4 +1,4 @@
-FROM postgres:10-alpine
+FROM postgres:9.6-alpine
 MAINTAINER guox@goodrain.com
 ADD sql/*.sql /docker-entrypoint-initdb.d/
 ADD docker-entrypoint.sh /
